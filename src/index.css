@@ -1,0 +1,89 @@
+:root{
+  --darkBlue:rgb(12, 12, 99);
+  --lightBlue:rgb(47, 122, 181);
+  --fontColor:rgb(255, 255, 255);
+  --btnHoverColor:rgba(203, 203, 203, 0.845);
+  --transparentDiv:rgba(255, 255, 255, 0.115);
+  --txtBG:rgb(251, 251, 251);
+  --btnBg:rgb(231, 231, 231);
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+  color: var(--fontColor);
+  padding: 20px;
+  user-select: none;
+}
+.weather-container{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 360px;
+  max-width: 360px;
+  background-image: linear-gradient(180deg, var(--darkBlue),var(--lightBlue));
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px 2px rgb(171, 171, 171);
+}
+.img-main{
+  width: 45%;
+}
+.search-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20PX;
+}
+.txt-search{
+  font-size: 18px;
+  padding: 10px 10px;
+  border-radius: 8px 0px 0px 8px;
+  text-align: center;
+  border: none;
+  background-color: var(--txtBG);
+}
+.btn-search{
+  text-align: center;
+  border-radius: 0px 8px 8px 0px;
+  height: 100%;
+  margin-left: 0px;
+  padding: 9px 10px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--btnBg);
+}
+.btn-search:hover{
+background-color: var(--btnHoverColor);
+}
+.btn-search > img{
+  height: 19px;
+}
+.temp{
+  margin: 20px 0px 10px;
+  font-size:50px;
+}
+.city-name{
+  margin: 0px 0px 5px 0px;
+}
+.container-otherDetails{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.container-wind{
+  background-color: var(--transparentDiv);
+  border-radius: 8px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container-wind >img{
+  width: 30px;
+  margin-right: 5px;
+}
